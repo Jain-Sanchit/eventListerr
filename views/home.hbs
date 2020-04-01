@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+    .container {
+        text-align: center;
+
+    }
+</style>
+<body>
+    {{>navbar}}
+    <div class="container">
+
+        <h1>Welcomem to Home Page </h1>
+        <br>
+        <h2>
+            <p>This is an event lister webpage . Want to list your events or get to know about the events going on??</p>
+        </h2>
+        <br>
+        <h2>
+            <p><a href="/users/register">Sign Up now !!</a></p>
+        </h2>
+        
+        <br>
+        <p>Already a member??<a href="/users/login">Login now</a></p>
+    </div>
+    
+</body>
+
+</html>

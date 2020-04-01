@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+    .container{
+        text-align: center;
+
+    }
+</style>
+<body>
+    {{>navbar}}
+    <div class="container">
+        <h1>Event Name - {{event.name}}</h1>
+        <h3>Category - {{event.category}}</h3>
+        <br><br>
+        <h3>Details of event - <span style="color: chartreuse;">{{event.description}}</span></h3>
+        
+        <br>
+        <h3>Event Date and Time</h3>
+        <p>Date : {{event.eventDate}}</p>
+        <p>Time : {{event.eventTime}}</p>
+        <br>
+        <p>Listed By : {{event.listedUser}}</p>
+        <br><br>
+        <p>See all listed events. <a href="/events">here</a></p>
+        <p>Want to add a new event? <a href="/events/new">Click here</a></p>
+    </div>
+</body>
+</html>

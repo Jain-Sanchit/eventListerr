@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+    .container {
+        text-align: center;
+
+    }
+</style>
+<body>
+    {{>navbar}}
+    <div class="container">
+        <h1>{{user.name}} dashboard </h1>
+        <br>
+        <p>This is an event lister app.</p>
+        <br>
+        <h2><a href="/events">Go to listed events</a></h2>
+        <br>
+        <h2><a href="/events/new">Add a new event</a></h2>
+        <br>
+        <h4><a href="/users/logout">logout</a></h4>
+    </div>
+    
+</body>
+</html>

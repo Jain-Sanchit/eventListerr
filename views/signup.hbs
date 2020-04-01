@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+    .container {
+        text-align: center;
+
+    }
+</style>
+<body>
+    {{>navbar}}
+    <div class="container">
+        <form action="/users/register" method="POST">
+            <div class="form-group">
+                
+                <label>Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" class="form-control" name="email" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+    
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" name="password2" placeholder="Enter same Password again">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+            <p>Have an account ? <a href="/users/login">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
